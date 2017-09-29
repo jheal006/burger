@@ -3,7 +3,7 @@ CREATE DATABASE burgers_db;
 
 USE burgers_db;
 
-CREATE TABLE products(
+CREATE TABLE burgers(
   item_id INT NOT NULL AUTO_INCREMENT,
   burger_name VARCHAR(100) NOT NULL,
   devouered BOOLEAN DEFAULT false,
