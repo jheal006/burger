@@ -1,10 +1,10 @@
-<h1>burgers!</h1>
+<h1>Throw Down, with The King...</h1>
+<div class="king"></div>
 
 <div class="container">
 
 <div class="uneatenBurgers">
   <h2>Yet to be Devoured!</h2>
-
   <ul>
     {{#each burgers}}
       {{#unless this.devoured}}
@@ -12,8 +12,8 @@
           {{this.burger_name}}
 
           <form action="/{{this.id}}?_method=PUT" method="POST">
-            <input type="hidden" name="devoured" value="true">
-            <button type="submit">Get to grilling!</button>
+            <input type="hidden" name="devoured" value="true"><br />
+            <button class="devourButton" type="submit">Nom Nom Nom!</button>
           </form>
 
         </li>
@@ -21,6 +21,7 @@
     {{/each}}
   </ul>
 </div>
+
 
 
   <div class="eatenBurgers">
@@ -42,9 +43,10 @@
   </div>
 </div>
 
+
 <div class="addBurger">
 
-  <h2>Add a Different Burger</h2>
+  <h2>Have Another Burger</h2>
   <form class="create-update-form" action="/" method="POST">
 
     <div class="form-group">
@@ -55,7 +57,7 @@
       <!-- <label for="slee">devour?</label><br>     -->
     </div>
 
-    <button type="submit">How about another burger?!</button>
+    <button type="submit">Get to grilling!!!!</button>
   </form>
 
 </div>

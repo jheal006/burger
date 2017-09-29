@@ -1,15 +1,31 @@
 body {
-  background: #b7b795;
+  background: #f3f3f3;
+  background-image: url('../grill.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 li {
   padding: 5px;
-  margin: 5px;
-  /*background: #faebd7;*/
+  font-size: 18px;
+  line-height: 0.6;
 }
+
 
 h1 {
   text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+input {
+  background-color: #e3ebe0;
+}
+
+.devourButton {
+  padding: 5px;
 }
 
 .label {
@@ -19,6 +35,12 @@ h1 {
 .create-update-form {
   padding: 5px;
   margin: 5px;
+  text-align: center;
+}
+
+.create-update-form button {
+  padding: 10px;
+  margin-top: 18px;
 }
 
 .form-group {
@@ -32,25 +54,38 @@ h1 {
 
 .uneatenBurgers {
   float: left;
-  background: green;
-  margin: 40px;
+  background: #ccccb3;
+  width: 200px;
   padding: 40px;
+  padding-top: 0px;
+  margin: 40px;
+  margin-left: 150px;
+  border: 1px solid #99ff33;
 }
 
 .eatenBurgers {
   float: right;
-  background: red;
-  margin: 40px;
+  background: #ccccb3;
+  width: 200px;
   padding: 40px;
+  padding-top: 0px;
+  margin: 40px;
+  margin-right: 150px;
+  border: 1px solid #ff3300;
+}
+
+.eatenBurgers li {
+  padding-bottom: 18px;
 }
 
 .addBurger {
   align-items: center;
   margin: 50px auto;
-  background: aqua;
+  background: #ccccb3;
   width: 200px;
   height: 200px;
   padding: 10px;
+  border: 1px solid aqua;
 }
 .addBurger h2 {
   text-align: center;
@@ -58,5 +93,12 @@ h1 {
 }
 
 .king {
-  background-image: url('./public/assets/css/king.jpg');
+  background-image: url('../king.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border-radius: 80%;
+  border: 1px solid #ff4000;
 }
